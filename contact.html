@@ -1,0 +1,75 @@
+<!-- Designed and developed by Pintubhai Chauhan -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/site.css">
+    <title>Sunset Grill</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html" id="left">Sunset Grill</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/about.html">About</a>
+        <a href="/careers.html">Career</a>
+        <a href="/menu.html">Menu</a>
+        <a href="/index.html">Home</a>
+    </header>
+
+    <main>
+        <div class="Contact_us">
+            <h1>We Love your Feedback</h1>
+        </div>
+
+        <div class="form_heading">
+            <h1>Contact Us</h1>
+            <div class="contact_main">
+                <p>If you have any questions or concerns, please use the form below.</p>
+                <p>Please note: We do not accept reservations, we operate on a first come, first served basis.</p>
+
+                <form id="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+                <div id="success-message" class="hidden">
+                    <p>Your form has been submitted successfully!</p>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <p id="copyright">Copyright &copy; Sunset Grill</p>
+    </footer>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

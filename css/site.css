@@ -1,0 +1,424 @@
+body {
+  margin: 0;
+  font-family: "Century Gothic", serif;
+}
+
+header {
+  overflow: hidden;
+  background-color: teal;
+
+}
+
+header #left {
+  float: left;
+}
+
+header a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+header a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+header .icon {
+  display: none;
+}
+
+footer {
+  padding: 1px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+
+.fullImage {
+  width: 100%;
+  height: 300px;
+}
+
+#slides img {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 60px;
+  background-color: #ccc;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+.column>white {
+  background-color: azure;
+  width: 49.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  position: relative;
+  background-color: teal;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+li {
+  padding-right: 10px;
+  display: inline;
+}
+
+.thumbnail_image {
+  width: 30px;
+  height: 30px;
+}
+
+.big_image {
+  width: 500px;
+  height: 300px;
+}
+
+.thumbnail_about_image {
+  width: 180px;
+  height: 200px;
+}
+
+a {
+  position: relative;
+}
+
+#main_menu {
+
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about_main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+.career_main {
+  background: url("/img/career_main.jpg");
+
+  min-height: 500px;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.career_main h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 70px;
+  font-size: 3em;
+}
+
+.career_main h2 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  padding-top: 70px;
+  font-size: 3em;
+  position: relative;
+  left: -175px;
+  font-size: 75%;
+  opacity: .2;
+
+}
+
+.career_philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: auto;
+}
+
+.career_philosophy_pic img {
+  width: 850px;
+  height: auto;
+}
+
+.career_philosophy_comment {
+  text-align: left;
+
+  width: 70%;
+  padding: 60px 70px 80px 10%;
+  line-height: 1.6;
+}
+
+.career_philosophy_comment p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.career_philosophy_comment h3 {
+  font-size: 2em;
+}
+
+.career_opportunities h3,
+.career_positions h3 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: -5px;
+  padding-top: 30px;
+
+}
+
+.career_positions h3 {
+  color: white;
+}
+
+.career_opportunities p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+
+}
+
+.career_opportunities button {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 650px;
+  cursor: pointer;
+}
+
+.career_main {
+  overflow: auto;
+}
+
+.career_opportunities {
+  background-color: antiquewhite;
+  height: 300px;
+  margin-top: -124px;
+}
+
+
+.career_positions p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding: 0px 300px 0px 300px;
+  text-align: justify;
+  color: white;
+}
+
+.career_positions_main {
+  background: url("/img/career_position.jpg");
+  min-height: 500px;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+
+#accordion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  width: 550px;
+  margin: 0 auto;
+  border: 3px solid gray;
+  padding: 15px 25px;
+}
+
+.career_ul {
+  padding-left: 45px;
+}
+
+.career_ul li {
+  padding-bottom: .25em;
+}
+
+#accordion p {
+  padding-bottom: .25em;
+  padding-left: 25px;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90%;
+}
+
+#accordion h3 {
+  text-transform: uppercase;
+}
+
+/* Center the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the form */
+form {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 500px;
+  max-width: 100%;
+}
+
+/* Style the form heading */
+form h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style the form inputs and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* Style the form file input */
+input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Style the form submit button */
+button[type="submit"] {
+  background-color: teal;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* Style the form submit button on hover */
+button[type="submit"]:hover {
+  background-color: rgb(4, 61, 61);
+}
+
+.hidden {
+  display: none;
+}
+
+#success-message {
+  text-align: center;
+  padding: 20px;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.Contact_us h2 {
+  text-align: center;
+  color: white;
+  padding-top: 70px;
+  font-size: 3em;
+}
+
+.Contact_us {
+  background: url("/img/Contact\ Us.jpeg");
+  min-height: 400px;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -27px;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.Contact_us h1 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 150px;
+
+}
+
+.form_heading h1,
+.form_heading p {
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#contact-form {
+  display: block;
+  margin: auto;
+}
